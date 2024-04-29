@@ -13,7 +13,7 @@ Não foi usado a tecnologia React.
 
 
 
-Para executar o código corretamente é necessário a intalação de:
+# Para executar o código corretamente é necessário a intalação de:
 
 JAVA versão 21: https://www.oracle.com/br/java/technologies/downloads/
 
@@ -30,7 +30,7 @@ https://docs.google.com/document/d/1DQzt7ar_4M7rSRLL9yTqYQJVs6kh6sSO195UgC97jT8/
 
 
 
-Modo de Uso:
+# Modo de Uso:
 
 Abrir arquivo "application.properties" no diretório: "Application/demo(2)/src/main/resources/" - 
 e modificar os campos "spring.datasource.username= " e "spring.datasource.password= " com a senha de acesso ao SGBD local do mySQL ou outro Workbench instalado.
