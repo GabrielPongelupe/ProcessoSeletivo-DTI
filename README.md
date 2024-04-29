@@ -1,6 +1,7 @@
 # ProcessoSeletivo-DTI
 
 O projeto consiste em uma aplicação FullStack que permite aos usuários inserir valores correspondentes à data, quantidade de cães pequenos e quantidade de cães grandes. Em resposta, a aplicação exibe um card contendo informações do petShop com o melhor preço e valor incluso.
+
 Para expandir a funcionalidade da aplicação, a proposta é integrar a capacidade de cadastrar novos petshops conforme necessário. Isso implicaria em modificar o código principal para permitir a inclusão dinâmica de novos estabelecimentos na base de dados.
 
 Atualmente, o projeto armazena os dados dos petshops em um Banco de Dados local. No entanto, considerando a conveniência de acesso remoto aos dados, uma possível extensão seria migrar essa base de dados para um ambiente online. Isso possibilitaria ao Senhor Eduardo acessar e gerenciar a base de dados de qualquer dispositivo com conexão à internet.
