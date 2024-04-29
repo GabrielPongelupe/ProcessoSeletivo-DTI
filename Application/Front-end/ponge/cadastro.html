@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Prático - DTI Digital</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <section class="conteudo-central">
+        <section class="conteudo-esquerda">
+            <div class="box-cadastro">
+                <h1>Cadastre um novo petshop:</h1>
+                <input type="text" name="nome" placeholder="Nome do petshop...">
+                <input type="text" name="distancia" placeholder="Distância do petshop...">
+                <input type="text" name="preco_CaoPequeno" placeholder="Preço para cachorros pequenos...">
+                <input type="text" name="preco_CaoGrande" placeholder="Preço para cachorros grandes...">
+                <label for="metodo" style="margin: 10px;">Escolha como sera adicionado o valor aos fins de Semana: </label>
+                <select id="metodo" name="metodo_Calcular_Preço">
+                    <option value="ADICIONAL_FIXO">ADICIONAL_FIXO</option>
+                    <option value="ADICIONAL_PERCENTUAL">ADICIONAL_PERCENTUAL</option>
+                    <option value="NENHUM">NENHUM</option>
+                </select>
+                
+                <input type="text" name="adicional_FimDeSemana" placeholder="Adicional de fim de semana...">
+                <button id="btn-cadastrar">Cadastrar</button>
+            </div>
+        </section>
+        
+
+        <script src="scripts/cadastro.js"></script>
+</body>
+
+</html>

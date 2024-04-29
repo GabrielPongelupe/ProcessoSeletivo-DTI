@@ -1,0 +1,72 @@
+/* Estilo do body */
+body{
+    
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo do container que envolve toda a parte central da aplicação */
+.conteudo-central{
+    
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilo do conteudo localizado a esquerda, responsável pela busca e cadastro de petshops*/
+.conteudo-esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    flex-wrap: wrap
+    
+}
+
+/*Estilo do conteudo localizado a esquerda, responsável por exibir o resultado da busca*/
+.conteudo-direita{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+}
+
+/*Estilo dos inputs da aplicação*/
+input{
+    display: block;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+input:focus{
+    outline: none;
+}
+
+
+/*Estilo dos botões da aplicação*/
+button{
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4f4f4f;
+
+}
+
+/* Responsividade para telas até 768px*/
+@media (max-width: 768px){
+    .conteudo-central{
+        flex-direction: column;
+    }
+    .conteudo-esquerda{
+        width: 100%;
+    }
+    .conteudo-direita{
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Prático - DTI Digital</title>
+    <link rel="stylesheet" href="styles/busca.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</head>
+
+<body>
+    <section class="conteudo-central">
+        <section class="conteudo-esquerda">
+            <div class="box-pesquisa">
+                <h1>Teste Prático - DTI Digital</h1>
+                <h3>Encontre o melhor petshop aqui:</h3>
+                <input type="text" name="data" id="data-busca" placeholder="Insira a data aqui...">
+                <input type="text" name="caesPequenos" id="pequenos-busca"
+                    placeholder="Quantidade de Cachorros pequenos...">
+                <input type="text" name="caesGrandes" id="grandes-busca"
+                    placeholder="Quantidade de Cachorros grandes...">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+            <div class="box-cadastro">
+                <h1>Cadastre um novo petshop:</h1>
+                <a href="cadastro.html">Cadastrar</a>
+
+            </div>
+        </section>
+        <section class="conteudo-direita">
+            <h4>Resultado: </h4>
+            <div id="resultado"></div>
+        </section>
+
+
+
+        <script src="scripts/busca.js"></script>
+        
+</body>
+
+
+</html>
