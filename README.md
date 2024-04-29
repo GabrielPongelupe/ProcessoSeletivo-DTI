@@ -28,7 +28,10 @@ Configurar ambiente de Trabalho Corretamente.
 Para mais informações sobre a instalação de recursos necessários acessar o seguinte documento: 
 https://docs.google.com/document/d/1DQzt7ar_4M7rSRLL9yTqYQJVs6kh6sSO195UgC97jT8/edit?usp=sharing
 
+
+
 Modo de Uso:
+
 Abrir arquivo "application.properties" no diretório: "Application/demo(2)/src/main/resources/" - 
 e modificar os campos "spring.datasource.username= " e "spring.datasource.password= " com a senha de acesso ao SGBD local do mySQL ou outro Workbench instalado.
 
