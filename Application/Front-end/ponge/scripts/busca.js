@@ -62,7 +62,7 @@ async function getPetshopMenorValor() {
         <div>
           
           <h4>nome: ${result.petShop.nome}</h4>
-          <h5>O PetShop mais barato é o "${result.petShop.nome}" com o preço total de R$${result.value}
+          <h5>O PetShop mais barato é o "${result.petShop.nome}"
             <br> Caes Pequenos: R$ ${result.petShop.preco_CaoPequeno} <br>
             Caes Grandes: R$ ${result.petShop.preco_CaoGrande} 
             
