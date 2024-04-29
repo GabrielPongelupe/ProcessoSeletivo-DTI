@@ -46,6 +46,7 @@ cadastrarButton.addEventListener('click', async () => {
             alert("PetShop Cadastrado com sucesso!!!")
         } else {
             console.error('Erro ao cadastrar o petshop:', response.statusText);
+            alert("Erro ao cadastrar PetShop, verifique se os dados estão digitados corretamente.")
         }
     } catch (error) {
         console.error('Erro ao fazer a solicitação:', error);
