@@ -5,9 +5,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.example.demo.DTOs.PetShopRequest;
 import com.example.demo.DTOs.PetShopReturn;
+import com.example.demo.enums.TipoCalcularPreco;
 import com.example.demo.models.PetShop;
 import com.example.demo.services.PetShopService;
 
+import jakarta.annotation.PostConstruct;
 
 import java.net.URI;
 import java.time.LocalDate;
@@ -47,7 +49,44 @@ public class PetShopController {
         
         return ResponseEntity.created(uri).build();
     }
+
     
+    @PostConstruct
+    public void init() {
+        // Crie um novo PetShop com atributos padrão
+        PetShop petShop = new PetShop();
+        petShop.setId(1L);
+        petShop.setNome("Meu Canino Feliz");
+        petShop.setDistancia(2.0);
+        petShop.setPreco_CaoPequeno(20.0);
+        petShop.setPreco_CaoGrande(40.0);
+        petShop.setMetodo_Calcular_Preço(TipoCalcularPreco.ADICIONAL_PERCENTUAL);
+        petShop.setAdicional_FimDeSemana(120.0);
+
+        PetShop petShop2 = new PetShop();
+        petShop2.setId(2L);
+        petShop2.setNome("Vai Rex");
+        petShop2.setDistancia(1.7);
+        petShop2.setPreco_CaoPequeno(15.0);
+        petShop2.setPreco_CaoGrande(50.0);
+        petShop2.setMetodo_Calcular_Preço(TipoCalcularPreco.ADICIONAL_FIXO);
+        petShop2.setAdicional_FimDeSemana(5.0);
+
+        PetShop petShop3 = new PetShop();
+        petShop3.setId(3L);
+        petShop3.setNome("ChowChawgas");
+        petShop3.setDistancia(0.8);
+        petShop3.setPreco_CaoPequeno(30.0);
+        petShop3.setPreco_CaoGrande(45.0);
+        petShop3.setMetodo_Calcular_Preço(TipoCalcularPreco.NENHUM);
+        petShop3.setAdicional_FimDeSemana(0.0);
+
+        // Salve o PetShop no banco de dados usando o serviço
+        petShopService.create(petShop);
+        petShopService.create(petShop2);
+        petShopService.create(petShop3);
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<PetShop> update(@PathVariable("id") Long id, @RequestBody PetShop petShop) {
         petShop.setId(id);

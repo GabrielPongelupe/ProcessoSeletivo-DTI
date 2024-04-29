@@ -58,11 +58,16 @@ async function getPetshopMenorValor() {
     .then(result => {
         console.log(result); // Aqui você pode ver o objeto retornado
         resultado.innerHTML = `<div class="card">
-        <img src="img/PetShopIMG.jpg">
+        <img id= "img" src="img/PetShopIMG.jpg">
         <div>
-          <h3>${result.petShop.nome}</h3>
-          <h5>O PetShop mais barato é o "${result.petShop.nome}" com o preço de R$${result.value}</h4>
-          <span>R$ ${result.value}</span>
+          
+          <h4>nome: ${result.petShop.nome}</h4>
+          <h5>O PetShop mais barato é o "${result.petShop.nome}" com o preço total de R$${result.value}
+            <br> Caes Pequenos: R$ ${result.petShop.preco_CaoPequeno} <br>
+            Caes Grandes: R$ ${result.petShop.preco_CaoGrande} 
+            
+          </h4>
+          <span> Total: R$ ${result.value}</span>
           
         </div>
       </div>`;

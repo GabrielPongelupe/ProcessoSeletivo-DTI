@@ -13,6 +13,7 @@ body{
     justify-content: space-between;
 }
 
+
 /*Estilo do conteudo localizado a esquerda, responsável pela busca e cadastro de petshops*/
 .conteudo-esquerda{
     display: flex;
