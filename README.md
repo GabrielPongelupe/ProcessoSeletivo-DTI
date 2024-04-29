@@ -16,10 +16,14 @@ JAVA versão 21: https://www.oracle.com/br/java/technologies/downloads/
 
 Apache Maven 3.9.5: https://maven.apache.org/
 
-MySQL: https://www.mysql.com/downloads/
+MySQL e Workbench: https://www.mysql.com/downloads/
 
 HeidSQL: https://www.heidisql.com/download.php - opcional apenas para visualização da base de dados
 
+Extensões para o VSCode:
+  
+  * Extension Pack for Java e Spring Boot Extension Pack: https://code.visualstudio.com/docs/java/extensions
+    
 Configurar ambiente de Trabalho Corretamente.
 
 Para mais informações sobre a instalação de recursos necessários acessar o seguinte documento: 
