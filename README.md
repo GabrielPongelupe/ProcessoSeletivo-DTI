@@ -36,3 +36,9 @@ Acessar arquivo DemoApplication.java em 'demo(2)/src/main/java/' e executá-lo (
 Abrir LiveServer do arquivo index.html, preencher com os dados desejados e clicar no botão "Buscar" - fazer isto com DemoApplication.java em execução.
 
 Ao clicar no botão "Cadastrar", os usuários terão a capacidade de registrar um novo PetShop, permitindo a inclusão de novos estabelecimentos na região. Este recurso oferece a possibilidade de expandir a base de dados com informações atualizadas sobre os estabelecimentos disponíveis para serviços relacionados a animais de estimação na área circundante.
+
+# Experiência Pessoal
+
+Este projeto representou uma excelente oportunidade para aplicar e aprimorar minhas habilidades em frontend, Java Spring Boot e lógica de programação. A escolha do problema proposto foi muito acertada, pois permitiu a criação de um projeto FullStack completo, partindo do zero.
+
+Ao longo do desenvolvimento, pude mergulhar profundamente na implementação de soluções tanto no frontend quanto no backend, explorando os recursos do React para a construção da interface do usuário e utilizando o Java Spring Boot para a criação de uma base sólida no lado do servidor. A jornada de transformar os requisitos do problema em código funcional foi desafiadora, porém extremamente gratificante.
