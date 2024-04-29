@@ -61,7 +61,7 @@ async function getPetshopMenorValor() {
         <img src="img/PetShopIMG.jpg">
         <div>
           <h3>${result.petShop.nome}</h3>
-          <h5>O PetShop mais barato é o ${result.petShop.nome} com o preço de R$${result.value}</h4>
+          <h5>O PetShop mais barato é o "${result.petShop.nome}" com o preço de R$${result.value}</h4>
           <span>R$ ${result.value}</span>
           
         </div>
